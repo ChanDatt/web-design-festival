@@ -1,0 +1,616 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+body{
+    background-image: linear-gradient(rgb(105, 182, 203), rgb(4, 95, 4));
+    font-family:'Helvetica Neue';
+}
+
+#main{
+    width: 100vw;
+}
+
+/*header*/
+#header{
+    height:96px;
+    position: relative;
+}
+
+#header a{
+    float: left;
+}
+
+#header .logo-fest{
+    height: 95px;
+    margin-left: 67px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+#header #nav{
+    float:right;
+    display:flex;
+    line-height: 90px;
+    margin-right: 35px;
+    margin-top: 5px;
+}
+
+#nav li{
+    list-style: none;
+}
+
+#nav li a{
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding : 0 25px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+#nav li:hover a{
+    color :black;
+}
+
+.img-header img{
+    width: 100vw;
+    height: 850px;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.nav-bar .nav_bars-btn{
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    float: right;
+    line-height: 95px;
+    display: none;
+    margin-right: 20px;
+}
+
+.nav_overlay{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav_mobile{
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width:320px;
+    max-width: 100%;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25px 0 0 25px;
+    z-index: 5;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+#nav-mobile-input:checked ~ .nav_overlay{
+    display: block;
+}
+
+#nav-mobile-input:checked ~ .nav_mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+#nav_list{
+    margin-top: 24px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+#nav_list li a{
+    text-decoration: none;
+    color: black;
+    padding: 38px;
+    display: block;
+    font-weight: 550;
+    letter-spacing: 3px;
+}
+
+#nav_list li a:hover{
+    color: #fff;
+}
+
+
+/*lineup*/
+.content{
+    height: 3350px;
+}
+
+.content-lineup{
+    height: 100vh;
+}
+
+.content>h2{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    margin: 50px 0;
+    letter-spacing: 22px;
+    font-family: math;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 0.6px 0.7px 9px rgb(16, 114, 146,0.8);
+}
+
+.lineup{
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin:0 70px 90px;
+}
+
+
+
+.lineup #title-lineup{
+    margin: 200px 15px 70px;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    box-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.lineup .img-lineup{
+    width: 450px;
+    height: 450px;
+    margin-top: 15px;
+    float: left;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+.lineup{
+    backdrop-filter: blur(13px);
+    background: rgba(225, 225, 255, 0.25);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 1px 0.5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.lineup .biography-lineup{
+    margin: 25px 0;
+    padding-left: 35px;
+}
+
+.lineup .biography-lineup h2{
+    margin-bottom: 10px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.lineup .biography-lineup p{
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 35px;
+    letter-spacing: 1.25px;
+}
+
+
+/*nonmusic*/
+.biography-lineup-nonmusic{
+    line-height: 140px;
+}
+
+.biography-lineup-nonmusic h2{
+    font-size: 75px !important;
+}
+
+.biography-lineup-nonmusic p{
+    font-size: 25px !important;
+}
+
+.lineup5 .biography-lineup-nonmusic p{
+    font-size: 20px !important;
+}
+
+.lineup5 .img-lineup{
+    margin-top: 35px !important;
+}
+
+.Music audio{
+    width: 80%;
+    outline: none;
+}
+
+.Music audio::-webkit-media-controls-enclosure{
+    background: rgba(225, 225, 255, 0.08);
+    backdrop-filter: blur(15);
+}
+
+.Music audio::-webkit-media-controls-enclosure:hover{
+    background: rgba(225, 225, 255, 0.5);
+    transition: all 2s ease-in-out;
+}
+
+.Music {
+    height: 70px;
+}
+
+
+
+
+
+
+/*mp3*/
+.mp3-lineup{
+    width: 70%;
+    margin: 25px auto 0;
+}
+
+.mp3-lineup .song-name{
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.music-slider{
+    margin-top: 15px;
+}
+
+.seek-bar{
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-appearance: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px rgb(1, 29, 63);
+}
+
+.current-time.music-time{
+    font-size: 12px;
+}
+
+.music-time{
+    float: right;
+}
+
+.current-time{
+    float: left;
+}
+
+.controls{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.btn-play{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(0, 44, 76);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-play span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: .5s;
+}
+
+.btn-play span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+
+.btn-play.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+
+.btn-play.pause span:nth-child(1){
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.btn-play.pause{
+    animation: pulse 2s linear infinite;
+}
+
+.btn{
+    color: rgb(0, 44, 76);
+    background: none;
+    border: none;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0;
+    }
+    20%{
+        box-shadow: 0 0 0 5px rgba(225, 225, 255, 0.2);
+    }
+    30%{
+        box-shadow: 0 0 0 5px rgba(225, 225, 255, 0.3);
+    }
+}
+
+/*footer*/
+#footer{
+    height: auto;
+    padding: 50px;
+    margin-top: 800px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .nav-footer img{
+    width: 450px;
+}
+
+#footer .nav-footer{
+    text-align: center;
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.logo-smedia{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    padding: 0 40px;
+}
+
+.subnav-footer ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.subnav-footer li a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+#footer .logo-footer a:hover,
+#footer .subnav-footer a:hover{
+    color: rgb(250, 123, 5);
+}
+
+
+
+/* Mobile */
+@media screen and (max-width: 739px){
+    .nav-bar .nav_bars-btn{
+        margin-right: 0;
+    }
+
+    #header .logo-fest{
+        height: 61px;
+        margin-left: 12px;
+        margin-top: 18px;    
+    }
+
+    .img-header img{
+        height: 1230px;
+    } 
+
+    .content>h2{
+        letter-spacing: 5px;
+        font-size: 45px;
+    }
+
+    .lineup{
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .lineup .img-lineup{
+        width: 100%;
+        height: 300px;
+        margin: 15px 0;
+    }
+  
+    .lineup .biography-lineup {
+        margin: 0;
+        padding-left: 0;
+    }
+  
+    .lineup .biography-lineup p{
+        padding-left: 0;
+        margin: 0 5px;
+        font-size: 15px !important;
+    }
+
+    .biography-lineup-nonmusic{
+        line-height: 70px;
+    }
+
+    .biography-lineup-nonmusic p{
+        line-height: 5px;
+        margin-bottom: 20px !important;
+    }
+
+    .mp3-lineup{
+        margin-bottom: 20px;
+    }  
+        
+    .content{
+        height: 6060px;
+    }    
+
+    .lineup .biography-lineup h2{
+        font-size: 44px !important;
+    }    
+
+
+    #footer{
+        margin-top: 80px;
+    }
+
+    #footer .nav-footer img{
+        width: 295px;
+    }
+
+    .logo-smedia{
+        padding: 0 25px;
+        font-size: 25px;
+    }
+
+    .logo-footer{
+        margin: 35px;
+    }
+
+    .subnav-footer ul{
+        display: inline-block;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .subnav-footer li a{
+        font-size: 15px;
+        font-weight: 650;
+        padding: 0;
+    }
+
+    .subnav-footer li{
+        width: 49%;
+        text-align: center;
+        margin: 20px auto;
+        letter-spacing: 3px;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px)
+{
+    #header .logo-fest{
+        height: 88px;
+        margin-left: 40px;
+        margin-top: 13px;    
+    }
+
+    .img-header img{
+          height: 1230px;
+    } 
+
+    .lineup{
+        display: block;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+
+    .lineup .img-lineup{
+        width: 100%;
+        height: 350px;
+        margin: 15px 0;
+    }
+    
+    .lineup .biography-lineup {
+        margin: 0;
+        padding-left: 0;
+    }
+    
+    .lineup .biography-lineup p{
+        padding-left: 0;
+        font-size: 20px;
+        margin: 0 25px;
+    }
+
+    .biography-lineup-nonmusic p{
+        font-size: 22px !important;
+        line-height: 5px;
+        margin-bottom: 20px !important;
+    }
+
+    .mp3-lineup{
+        margin-bottom: 25px;
+    }  
+        
+    .content{
+        height: 5800px;
+    }    
+
+    .Music{
+        height: 90px;
+    }
+
+    #footer{
+        margin-top: 568px;
+    }
+}
+
+@media screen and (max-width: 1023px)
+{
+    .nav-bar  .nav_bars-btn{
+        display: block; 
+    }
+    #nav a{
+        display: none;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

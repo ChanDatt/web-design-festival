@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - TCR</title>
+    <link rel="stylesheet" href="./css/style/tickets-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./css/image/favicon.png" />
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!--left-header-->
+            <a href="#">
+                <img src="./css/image/logo-festival.png" alt="Festival's logo" class="logo-fest">
+            </a>
+            
+            <!--right-header-->
+            <div class="nav-bar">
+                <ul id="nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./place.html">Place</a></li>
+                    <li><a href="./lineup.html">Lineup</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./tickets.html">Tickets</a></li>
+                </ul>
+                <label for="nav-mobile-input" class="nav_bar-btn">
+                    <i class="bx bx-menu ti-menu nav_bars-btn" style="color: white;"></i>
+                </label>
+
+                <input type="checkbox" hidden name="" id="nav-mobile-input">
+
+                <label for="nav-mobile-input"  class="nav_overlay"></label>
+
+                <div class="nav_mobile">
+                    <ul id="nav_list">
+                        <li><a href="#" class="nav-mobile_link">Home</a></li>
+                        <li><a href="./place.html" class="nav-mobile_link">Place</a></li>
+                        <li><a href="./lineup.html" class="nav-mobile_link">Lineup</a></li>
+                        <li><a href="./gallery.html" class="nav-mobile_link">Gallery</a></li>
+                        <li><a href="./tickets.html" class="nav-mobile_link">Tickets</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img-header">
+                <img src="./css/image/background2.jpg">
+            </div>
+        </div> 
+
+        <div class="ticket-event">
+            <div id="title-ticket">
+                <h2>Tickets</h2>
+            </div>
+            <div id="kitglowgetter" class="ticket">
+                <img src="./css/image/kit-glow-getter.png" alt="#">
+                <div class="content-ticket">
+                   <h2>Glow-Getter</h2>
+                   <p>$34.99</p>
+                   <button class="btn buyticket js-buy-ticket">Buy</button>
+                </div>
+            </div>
+            <div id="kittwinkle" class="ticket">
+               <img src="./css/image/kit-twinkle.png" alt="">
+               <div class="content-ticket">
+                   <h2>Twinkle</h2>
+                   <p>$24.99</p>
+                   <button class="btn buyticket js-buy-ticket">Buy</button>
+               </div>
+            </div>
+            <div id="kitglow" class="ticket">
+               <img src="./css/image/kit-glow.png" alt="">
+               <div class="content-ticket">
+                   <h2>Glow</h2>
+                   <p>$29.99</p>
+                   <button class="btn buyticket js-buy-ticket">Buy</button>
+               </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    
+        <div id="footer">
+            <div class="nav-footer">
+                <img src="./css/image/logo-festival-inline.png" alt="#">
+            </div>
+            <div class="logo-footer">
+                <a href="https://www.facebook.com/thecolorrun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/thecolorrun/" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://twitter.com/TheColorRun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.youtube.com/@thecolorrun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-youtube'></i>  
+                </a>
+            </div>
+            <div class="subnav-footer">
+                <ul>
+                    <li><a href="./charity.html">Charity</a></li>
+                    <li><a href="./contactus.html">Contact us</a></li>
+                    <li><a href="./privacypolicy.html">Privacy policy</a></li>
+                    <li><a href="./termsconditions.html">Terms and conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="bx bx-x"></i>
+            </div>
+            <header class="modal-header">
+                <i>Tickets</i>
+            </header>
+            <form action="">
+                <div class="modal-body">
+                    <div class="pick-city" class="modal-label">
+                        <p>
+                            <i class='bx bxs-business' ></i>
+                            City
+                        </p>
+                        <input type="radio" name="city" value="hcm" id="hcm" class="city" required>
+                        <label for="hcm">
+                            Ho Chi Minh
+                        </label>
+    
+                        <input type="radio" name="city" value="dn" id="dn" class="city" required>
+                        <label for="dn">
+                            Da Nang
+                        </label>
+                    
+                        <input type="radio" name="city" value="hn" id="hn" class="city" required>
+                        <label for="hn">
+                            Ha Noi
+                        </label>
+                    </div>
+    
+                    <div class="pick-kit modal-label">
+                        <p>
+                            <i class='bx bxs-backpack' ></i>
+                            Kit
+                        </p>
+                        <input type="radio" name="kit" value="glowgetter" id="glowgetter" class="kit" required>
+                        <label for="glowgetter">
+                            Glow-Getter - <i style="font-size: 14px;">$34.99</i>
+                        </label>
+    
+                        <input type="radio" name="kit" value="twinkle" id="twinkle" class="kit" required>
+                        <label for="twinkle">
+                            Twinkle - <i style="font-size: 14px;">$24.99</i>
+                        </label>
+                    
+                        <input type="radio" name="kit" value="glow" id="glow" class="kit" required>
+                        <label for="glow">
+                            Glow - <i style="font-size: 14px;">$29.99</i>
+                        </label>
+                    </div>
+    
+                    <label for="quantity" class="modal-label">
+                        <i class='bx bxs-cart'></i>
+                        Tickets
+                    </label>
+                    <input id="quantity" type="number" class="modal-input" placeholder="How many?" required>
+                    
+                    <label for="email" class="modal-label">
+                        <i class='bx bxs-user'></i>
+                        Send to
+                    </label>
+                    <input id="email" type="email" class="modal-input" placeholder="Enter email..." required>
+                    
+                    <button type="submit" id="buy-tickets">
+                        Request <i class='bx bx-check'></i>
+                    </button>
+                </div>
+            </form>
+                    <footer class="modal-footer">
+                        <p class="modal-help">Need <a href="contactus.html">help?</a></p>
+                    </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./css/style/tickets-style.js"></script>
+</body>
+</html>

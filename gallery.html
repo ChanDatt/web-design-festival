@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - TCR</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style/gallery-style.css">
+    <link rel="shortcut icon" href="./css/image/favicon.png" />
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!--left-header-->
+            <a href="#">
+                <img src="./css/image/logo-festival.png" alt="Festival's logo" class="logo-fest">
+            </a>
+            
+            <!--right-header-->
+            <div class="nav-bar">
+                <ul id="nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./place.html">Place</a></li>
+                    <li><a href="./lineup.html">Lineup</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./tickets.html">Tickets</a></li>
+                </ul>
+                <label for="nav-mobile-input" class="nav_bar-btn">
+                    <i class="bx bx-menu ti-menu nav_bars-btn" style="color: white;"></i>
+                </label>
+
+                <input type="checkbox" hidden name="" id="nav-mobile-input">
+
+                <label for="nav-mobile-input"  class="nav_overlay"></label>
+
+                <div class="nav_mobile">
+                    <ul id="nav_list">
+                        <li><a href="#" class="nav-mobile_link">Home</a></li>
+                        <li><a href="./place.html" class="nav-mobile_link">Place</a></li>
+                        <li><a href="./lineup.html" class="nav-mobile_link">Lineup</a></li>
+                        <li><a href="./gallery.html" class="nav-mobile_link">Gallery</a></li>
+                        <li><a href="./tickets.html" class="nav-mobile_link">Tickets</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="background-img">
+                <img src="./css/image/background5.png" alt="">
+            </div>
+            <div class="title">
+              <h1>Gallery 2023</h1>
+            </div>   
+        </div> 
+
+        <div id="content-gallery">
+          <div class="full-img" id="fullImgBox">'
+            <img src="./css/image/gallery-1.png" id="fullImg" alt="#">
+            <span onclick="closeFullImg()"><i class='bx bx-x'></i></span>
+          </div>
+          <div class="line line-1">
+            <img src="./css/image/gallery-1.png" onclick="openFullImg(this.src)" alt="#">
+            <img src="./css/image/gallery-2.jpg" onclick="openFullImg(this.src)" alt="#">
+            <img src="./css/image/gallery-3.jpg" onclick="openFullImg(this.src)" alt="#">
+            <div class="clear"></div>
+          </div>
+          <div class="line line-2">
+            <img src="./css/image/gallery-4.jpg" onclick="openFullImg(this.src)" alt="#">
+            <img src="./css/image/gallery-5.jpg" onclick="openFullImg(this.src)" alt="#">
+            <img src="./css/image/gallery-6.png" onclick="openFullImg(this.src)" alt="#">
+            <div class="clear"></div>
+          </div>
+          <div class="line line-3">
+            <img src="./css/image/gallery-7.jpeg" onclick="openFullImg(this.src)" alt="#">
+            <img src="./css/image/gallery-8.jpg" onclick="openFullImg(this.src)" alt="#">
+            <img src="./css/image/gallery-9.jpg" onclick="openFullImg(this.src)" alt="#">
+            <div class="clear"></div>
+          </div>
+          <div class="line line-4">
+            <div><img src="./css/image/gallery-10.jpg" onclick="openFullImg(this.src)" alt="#"></div>
+            <div><img src="./css/image/gallery-11.jpg" onclick="openFullImg(this.src)" alt="#"></div>
+            <div><img src="./css/image/gallery-12.jpg" onclick="openFullImg(this.src)" alt="#"></div>
+            <div class="clear"></div>
+          </div>
+
+        </div>
+
+        <div class="send-photo">
+          <div class="send-photo-image">
+            <img src="./css/image/icon-artist.png" alt="">
+          </div>
+          <div class="send-photo-paragraph">
+            <p>"If you have any unforgettable memories at THE COLOR RUN, please let us know."</p>
+            <button class="btn buyticket js-buy-ticket">Send</button>
+          </div>
+        </div>
+        
+        <div id="footer">
+            <div class="nav-footer">
+                <img src="./css/image/logo-festival-inline.png" alt="#">
+            </div>
+            <div class="logo-footer">
+                <a href="https://www.facebook.com/thecolorrun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/thecolorrun/" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://twitter.com/TheColorRun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.youtube.com/@thecolorrun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-youtube'></i>  
+                </a>
+            </div>
+            <div class="subnav-footer">
+                <ul>
+                    <li><a href="./charity.html">Charity</a></li>
+                    <li><a href="./contactus.html">Contact us</a></li>
+                    <li><a href="./privacypolicy.html">Privacy policy</a></li>
+                    <li><a href="./termsconditions.html">Terms and conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal js-modal">
+      <div class="modal-container js-modal-container">
+        <div class="modal-close js-modal-close">
+        </div>
+        <h2>Send Image</h2>
+        <form action="#">
+                <label for="name">
+                  Full Name:
+                </label>
+                <input type="text" id="name" class="modal-input" required>
+                
+                <label for="email" class="modal-label">
+                  Email:
+                </label>
+                <input id="email" type="email" class="modal-input" required>
+                
+                <label for="myfile">
+                  Select images:
+                </label>
+                <input type="file" id="myfile" name="myfile" accept="image/*" required>
+                
+                <button type="submit" id="buy-tickets">
+                    Send
+                </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./css/style/gallery-style.js"></script>
+</body>
+</html>

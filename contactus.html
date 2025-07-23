@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style/contactus-style.css">
+    <link rel="shortcut icon" href="./css/image/favicon.png" />
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!--left-header-->
+            <a href="#">
+                <img src="./css/image/logo-festival.png" alt="Festival's logo" class="logo-fest">
+            </a>
+            
+            <!--right-header-->
+            <div class="nav-bar">
+                <ul id="nav">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./place.html">Place</a></li>
+                    <li><a href="./lineup.html">Lineup</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./tickets.html">Tickets</a></li>
+                </ul>
+                <label for="nav-mobile-input" class="nav_bar-btn">
+                    <i class="bx bx-menu ti-menu nav_bars-btn" style="color: white;"></i>
+                </label>
+
+                <input type="checkbox" hidden name="" id="nav-mobile-input">
+
+                <label for="nav-mobile-input"  class="nav_overlay"></label>
+
+                <div class="nav_mobile">
+                    <ul id="nav_list">
+                        <li><a href="#" class="nav-mobile_link">Home</a></li>
+                        <li><a href="./place.html" class="nav-mobile_link">Place</a></li>
+                        <li><a href="./lineup.html" class="nav-mobile_link">Lineup</a></li>
+                        <li><a href="./gallery.html" class="nav-mobile_link">Gallery</a></li>
+                        <li><a href="./tickets.html" class="nav-mobile_link">Tickets</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="background-img">
+                <img src="./css/image/background3.png" alt="">
+            </div>
+        </div> 
+        <div id="slogan">
+            <div id="container">
+                <form id="form">
+                    <h1>Contact us</h1>
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <input type="text" id="lastName" placeholder="Last Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="mobile" placeholder="Mobile" required>
+                    <h4>Message</h4>
+                    <textarea required id="message"></textarea>
+                    <input type="submit" value="send" id="button">
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="nav-footer">
+                <img src="./css/image/logo-festival-inline.png" alt="#">
+            </div>
+            <div class="logo-footer">
+                <a href="https://www.facebook.com/thecolorrun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/thecolorrun/" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://twitter.com/TheColorRun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.youtube.com/@thecolorrun" target="_blank" class="logo-smedia">
+                    <i class='bx bxl-youtube'></i>  
+                </a>
+            </div>
+            <div class="subnav-footer">
+                <ul>
+                    <li><a href="./charity.html">Charity</a></li>
+                    <li><a href="./contactus.html">Contact us</a></li>
+                    <li><a href="./privacypolicy.html">Privacy policy</a></li>
+                    <li><a href="./termsconditions.html">Terms and conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./css/style/contactus-style.js"></script>
+</body>
+</html>
